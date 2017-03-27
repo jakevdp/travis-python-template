@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 PACKAGES = find_packages()
 
-opts = dict(name="Author Name",
+opts = dict(name="mypackage",
             maintainer="Author Name",
             maintainer_email="maintainer@domain.com",
             description="Simple example of a Travis setup",
