@@ -2,7 +2,8 @@
 
 [![build status](http://img.shields.io/travis/jakevdp/travis-python-template/master.svg?style=flat)](https://travis-ci.org/jakevdp/travis-python-template)
 
-Small template for setting up Travis CI with Python
+Small template for setting up Travis CI with Python. This assumes you are using
+``conda`` for installation of dependencies, and ``pytest`` to run your unit tests.
 
 
 ## Steps
@@ -21,5 +22,7 @@ Small template for setting up Travis CI with Python
     username, and ``repo`` with the name of your respository)
 
    ```
-   [![build status](http://img.shields.io/travis/username/repo/master.svg?style=flat)](https://travis-ci.org/username/repo)
+   [![build status](
+     http://img.shields.io/travis/username/repo/master.svg?style=flat)](
+    https://travis-ci.org/username/repo)
    ```

@@ -10,8 +10,6 @@ python:
 
 env:
   global:
-    # Directory where tests are run from
-    - TEST_DIR=/tmp/testdir
     # List package dependencies for conda
     - CONDA_DEPS="pytest numpy"
 
@@ -32,5 +30,4 @@ install:
 - python setup.py install
 
 script:
-- mkdir -p $TEST_DIR
-- cd $TEST_DIR && pytest --pyargs mypackage
+- python -m pytest mypackage
