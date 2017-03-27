@@ -2,13 +2,13 @@
 
 [![build status](http://img.shields.io/travis/jakevdp/travis-python-template/master.svg?style=flat)](https://travis-ci.org/jakevdp/travis-python-template)
 
-Small template for setting up Travis CI with Python. This assumes you are using
-``conda`` for installation of dependencies, and ``pytest`` to run your unit tests.
+This package provides a basic template for setting up Travis CI with Python.
+It assumes you are using ``conda`` for installation of dependencies, and
+``pytest`` to run your unit tests.
 
+## Setting Up Travis
 
-## Steps
-
-1. Sign in to Travis with your GitHub account ([authentication page](https://travis-ci.org/))
+1. Sign in to Travis with your GitHub account ([authentication page](https://travis-ci.org/auth))
    and accept the permissions confirmation (this needs to be done only once).
 2. Go to your [Travis profile page](https://travis-ci.org/profile/) and click the
    check-box next to the repository you want to test (you may have to first click
@@ -27,3 +27,8 @@ Small template for setting up Travis CI with Python. This assumes you are using
      http://img.shields.io/travis/username/repo/master.svg?style=flat)](
     https://travis-ci.org/username/repo)
    ```
+
+More detailed info is available from Travis itself; see the
+[getting started](https://travis-ci.org/getting_started) page.
+For a template with some more advanced info (including coverage, automatic
+deployment, etc.) check out the [shablona project](http://github.com/uwescience/shablona).
