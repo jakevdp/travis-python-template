@@ -15,7 +15,8 @@ It assumes you are using ``conda`` for installation of dependencies, and
    the "Sync Repositories" button if it is a new repo).
 3. Commit a file called ``.travis.yml`` in your repository (note that it must
    start with a "``.``", which marks it as a hidden file). Feel free to copy
-   and modify the [one from this repository](.travis.yml).
+   and modify the [one from this repository](.travis.yml) (you'll need to change
+   the ``PACKAGENAME`` and ``CONDA_DEPS`` variables to match your package)
    Pushing this file to master will trigger a new travis build. If the file is
    already in the repository, a push to master or the opening of a pull request
    will trigger a new build.
