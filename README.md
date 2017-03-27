@@ -15,12 +15,13 @@ Small template for setting up Travis CI with Python. This assumes you are using
    the "Sync Repositories" button if it is a new repo).
 3. Commit a file called ``.travis.yml`` in your repository (note that it must
    start with a "``.``", which marks it as a hidden file). Feel free to copy
-   and modify the one from this repository. Pushing this file to master will
-   trigger the Travis build.
+   and modify the [one from this repository](.travis.yml).
+   Pushing this file to master will trigger a new travis build. If the file is
+   already in the repository, a push to master or the opening of a pull request
+   will trigger a new build.
 4. If you wish, add a "build status" icon to your README. The code looks like this,
    (Note that you must, in two places, replace ``username`` with your GitHub
     username, and ``repo`` with the name of your respository)
-
    ```
    [![build status](
      http://img.shields.io/travis/username/repo/master.svg?style=flat)](

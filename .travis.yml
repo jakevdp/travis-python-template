@@ -12,8 +12,11 @@ env:
   global:
     # List package dependencies for conda
     - CONDA_DEPS="pytest numpy"
+    # package name for test invocation
+    - PACKAGENAME="mypackage"
 
 before_install:
+# Here we download miniconda and install the dependencies
 - export MINICONDA=$HOME/miniconda
 - export PATH="$MINICONDA/bin:$PATH"
 - hash -r
@@ -30,4 +33,4 @@ install:
 - python setup.py install
 
 script:
-- python -m pytest mypackage
+- python -m pytest $PACKAGENAME
